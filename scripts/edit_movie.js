@@ -348,11 +348,11 @@ function insertNewActor(data) {
 function update_movie() {
 	console.log("inside update");
 
-	let page = document.getElementById("spinner");
-	page.removeAttribute("HIDDEN");
+	// let page = document.getElementById("spinner");
+	// page.removeAttribute("HIDDEN");
 
-	let spinner = document.getElementById("page");
-	spinner.setAttribute("HIDDEN", true);
+	// let spinner = document.getElementById("page");
+	// spinner.setAttribute("HIDDEN", true);
 
 	movie["movieName"] = document.getElementById("movie-name").value;
 	movie["movieYor"] = document.getElementById("movie-yor").value;
