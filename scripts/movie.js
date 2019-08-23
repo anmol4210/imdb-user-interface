@@ -361,7 +361,7 @@ function add_movie() {
       let spinner = document.getElementById("spinner");
       spinner.setAttribute("HIDDEN", true);
 
-      window.location.href = "/";
+      window.location.href = "/index.html";
     }
   });
 }
