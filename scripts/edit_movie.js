@@ -399,14 +399,14 @@ function update_movie() {
 			// let spinner = document.getElementById("spinner");
 			// spinner.setAttribute("HIDDEN", true);
 
-			window.location.replace = "index.html";
+			// window.location.replace = "index.html";
 		},
 		error: function () {
 			console.log("failed");
-			window.location.replace = "index.html";
+			// window.location.replace = "index.html";
 		}
 	});
-	window.location.replace = "index.html";
+	// window.location.replace = "index.html";
 	console.log("end");
 
 }
