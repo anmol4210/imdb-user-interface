@@ -398,16 +398,23 @@ function update_movie() {
 
 			// let spinner = document.getElementById("spinner");
 			// spinner.setAttribute("HIDDEN", true);
-
+			window.location.replace('index.html');
+			// window.location.href = "index.html"
+			// window.location.pathname = "index.html"
 			// window.location.replace = "index.html";
 		},
 		error: function () {
 			console.log("failed");
+			window.location.replace('index.html');
+			// window.location.href = "index.html"
+			// window.location.pathname = "index.html"
 			// window.location.replace = "index.html";
 		}
 	});
-	window.location.href = "https://anmol4210.github.io/imdb-user-interface/"
+	window.location.replace('index.html');
+	// window.location.href = "index.html"
+	// window.location.pathname = "index.html"
 	// window.location.replace = "index.html";
 	console.log("end");
-
+	return true
 }
