@@ -406,6 +406,7 @@ function update_movie() {
 			// window.location.replace = "index.html";
 		}
 	});
+	window.location.href = "https://anmol4210.github.io/imdb-user-interface/"
 	// window.location.replace = "index.html";
 	console.log("end");
 
