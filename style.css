@@ -1,0 +1,25 @@
+body {
+  background-image: url("https://www.backgroundsy.com/file/large/digital-waves-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+.status-bg {
+  background: rgba(254, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.spin {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background: url(/link/to/your/image);
+  background-size: 100%;
+}

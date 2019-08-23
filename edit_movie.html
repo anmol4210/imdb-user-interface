@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<div>
+    <script async defer src="scripts/edit_movie.js"></script>
+
+    <div>
+        <div class="spinner-border spin" role="status" id="spinner">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div id="page" hidden>
+            <form name="movieForm" method="post" validate onsubmit="update_movie()">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4 d-flex justify-content-between">
+                            <div class="my-5 w-100">
+
+                                <div class="form-group p-3 m-3">
+                                    <label>Movie Name</label>
+                                    <input type="text" class="form-control" id="movie-name" required
+                                        placeholder="Movie Name" />
+                                </div>
+                                <div class="form-group p-3 m-3">
+                                    <label>Movie Year of Release</label>
+                                    <input type="text" class="form-control" id="movie-yor"
+                                        placeholder="Movie Year of Release" />
+                                </div>
+                                <div class="form-group p-3 m-3">
+                                    <label>Movie Description</label>
+                                    <input type="text" class="form-control" id="movie-description"
+                                        name="movie-description" placeholder="Movie Description" />
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="card text-white bg-info m-3 p-3 col-sm-4 justify-content-between" id="producer-details"
+                        style="max-width: 20rem;">
+                        <div>
+                            <div>
+                                <label style="color: black">Producer Name</label>
+                                <input class="mr-3 ml-3 mt-0 mb-3" style="color: black" required id="producer-name"
+                                    placeholder="Producer Name"></input>
+                            </div>
+                            <div>
+                                <label style="color: black">Producer Bio</label>
+                                <input class="mr-3 ml-3 mt-0 mb-3" style="color: black" id="producer-bio"
+                                    placeholder="Producer Bio"></input>
+                            </div>
+                            <div>
+                                <label style="color: black">Producer DOB</label>
+                                <input class="mr-3 ml-3 mt-0 mb-3" style="color: black" id="producer-dob"
+                                    placeholder="Producer DOB"></input>
+                            </div>
+                            <div>
+                                <label style="color: black">Producer Sex</label>
+                                <input class="mr-3 ml-3 mt-0 mb-3" style="color: black" id="producer-sex"
+                                    placeholder="Producer Sex"></input>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-4"></div>
+                    <div class="dropdown col-sm-4 p-3 m-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+                            Actors
+                        </button>
+                        <ul class="dropdown-menu" id="actors">
+                        </ul>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+
+                <div class="selected-actors" id="selected-actors">
+
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-dark">Update Movie</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    </body>
+
+</html>
